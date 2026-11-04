@@ -1,5 +1,5 @@
 /** Shared SEO config — used in layout, sitemap, robots, and JSON-LD. */
-export const siteUrl = "https://flowmintops.netlify.app";
+export const siteUrl = "https://flowmint.uk";
 export const siteName = "Flowmint";
 export const siteTagline = "CRM, Ops, Workflow & AI Automation";
 export const defaultDescription =

@@ -15,7 +15,7 @@ The form uses **Web3Forms** to email you directly. No custom-domain mailbox or R
 
 5. **Deploy** the site again (required — `NEXT_PUBLIC_*` vars are baked in at build time)
 
-6. Submit a test on `https://flowmintops.netlify.app/contact` and check **blessing@flowmint.uk** (and spam)
+6. Submit a test on `https://flowmint.uk/contact` and check **blessing@flowmint.uk** (and spam)
 
 ## Local development
 
