@@ -7,33 +7,42 @@ export type HeroSlide = {
   description: string;
 };
 
-/** Swap `src` / copy for your own slides. Each slide shows unique hero text with animation. */
+/** One slide per service: `public/images/hero1.png` … `hero4.png`. */
 export const heroSlides: HeroSlide[] = [
   {
-    src: "/images/5.png",
-    alt: "Team collaborating on strategy in a modern office",
-    eyebrow: "Business systems & automation",
-    titleBefore: "We design and automate business systems that",
-    titleHighlight: "scale your operations",
+    src: "/images/hero1.png",
+    alt: "HubSpot CRM dashboard with deals, revenue, and pipeline stages",
+    eyebrow: "CRM systems",
+    titleBefore: "A CRM your team trusts,",
+    titleHighlight: "not another empty database",
     description:
-      "From CRM setup to AI-powered workflows, we eliminate manual work and connect your tools into one efficient system.",
+      "We set up HubSpot, Salesforce, Zoho CRM, Pipedrive, or GoHighLevel with clean stages, clear ownership, and reports that match how you sell.",
   },
   {
-    src: "/images/4.png",
-    alt: "Professionals meeting with laptops and documents",
+    src: "/images/hero4.png",
+    alt: "Project board and ops planning on a laptop",
+    eyebrow: "Project & ops systems",
+    titleBefore: "Boards and bases with",
+    titleHighlight: "one clear source of truth",
+    description:
+      "Monday.com, Airtable, ClickUp, Asana, and Notion structured around status, owners, and views your team can follow.",
+  },
+  {
+    src: "/images/hero2.png",
+    alt: "Workflow automation connecting everyday business tools",
+    eyebrow: "Workflow automation",
+    titleBefore: "Automations on n8n, Zapier, and Make that",
+    titleHighlight: "stay maintainable",
+    description:
+      "Production flows with monitoring, retries, and docs - so the glue between your tools still works after go-live.",
+  },
+  {
+    src: "/images/hero3.png",
+    alt: "AI chatbot and voice agent on a phone",
     eyebrow: "AI assistants",
-    titleBefore: "Chat and voice experiences that qualify leads",
-    titleHighlight: "and route work automatically",
+    titleBefore: "AI that qualifies leads and",
+    titleHighlight: "writes back to your CRM",
     description:
-      "Guardrailed assistants that update your CRM, open tickets, and escalate to humans when confidence drops.",
-  },
-  {
-    src: "/images/6.png",
-    alt: "Consultant presenting a systems plan to a team",
-    eyebrow: "Skills training",
-    titleBefore: "Learn the automation skills your team needs",
-    titleHighlight: "for workflows and project management",
-    description:
-      "Hands-on training sessions help your team master CRM setup, integrations, workflow automation, and project management with practical, real-world exercises.",
+      "Chat and voice agents that book meetings, update records, and hand off to a person when the answer is not clear.",
   },
 ];

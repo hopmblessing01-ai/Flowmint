@@ -16,12 +16,6 @@ export function ContactForm() {
     const fd = new FormData(form);
     const email = String(fd.get("email") ?? "").trim();
 
-    if (email.endsWith(".co") && !email.endsWith(".com")) {
-      setError("Check your email address — did you mean .com instead of .co?");
-      setStatus("error");
-      return;
-    }
-
     const payload = {
       name: String(fd.get("name") ?? "").trim(),
       email,
@@ -111,7 +105,7 @@ export function ContactForm() {
       ) : null}
       {status === "success" ? (
         <p className="mt-4 text-sm font-medium text-emerald-700">
-          Thanks — your message is in. We’ll get back to you shortly.
+          Thanks - we’ve received your message. We’ll reply within one business day.
         </p>
       ) : null}
 
@@ -121,7 +115,7 @@ export function ContactForm() {
         className="btn-shine relative mt-6 inline-flex h-11 items-center justify-center overflow-hidden rounded-lg bg-blue-700 px-6 text-sm font-semibold text-white shadow-md transition hover:bg-blue-800 disabled:cursor-not-allowed disabled:opacity-60"
       >
         <span className="relative z-[1]">
-          {status === "loading" ? "Sending…" : "Submit"}
+          {status === "loading" ? "Sending…" : "Send message"}
         </span>
       </button>
     </form>

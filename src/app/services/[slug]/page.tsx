@@ -18,6 +18,7 @@ import {
   serviceCardClass,
   serviceCardTitleClass,
 } from "@/lib/service-card-styles";
+import { siteName } from "@/lib/site-seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: url,
     },
     openGraph: {
-      title: s.title,
+      title: `${s.title} | ${siteName}`,
       description: s.summary,
       url,
     },
@@ -80,31 +81,6 @@ export default async function ServicePage({ params }: Props) {
             </p>
           </Reveal>
         </PageHero>
-
-        <section
-          aria-label="Engagement snapshot"
-          className="border-b border-slate-800/80 bg-gradient-to-r from-[#0c1e3d] via-[#0f2749] to-[#0c1e3d] py-10 text-white"
-        >
-          <div className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-3 sm:gap-6 sm:px-6 lg:px-8">
-            {s.stats.map((row, i) => (
-              <Reveal
-                key={row.label}
-                variant="slide-up"
-                delayMs={i * 100}
-                durationMs={950}
-              >
-                <div className="rounded-xl border border-white/10 bg-white/[0.06] px-5 py-4 shadow-sm backdrop-blur-sm">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-200/85">
-                    {row.label}
-                  </p>
-                  <p className="mt-1.5 text-lg font-semibold tracking-tight text-white sm:text-xl">
-                    {row.value}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </section>
 
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <Reveal variant="fade-up" durationMs={1050}>
@@ -207,14 +183,14 @@ export default async function ServicePage({ params }: Props) {
                     Ready to scope this for your stack?
                   </p>
                   <p className={`mt-2 text-sm ${serviceCardBodyClass}`}>
-                    Book a free consultation and we’ll outline a pragmatic first
-                    milestone.
+                    Tell us your tools and the manual loop - we’ll outline a
+                    pragmatic first milestone.
                   </p>
                   <Link
-                    href="/#contact"
+                    href="/contact"
                     className="btn-shine relative z-[3] mt-5 inline-flex h-11 w-full items-center justify-center overflow-hidden rounded-lg bg-white px-6 text-sm font-semibold text-blue-900 shadow-md transition hover:bg-blue-50 sm:w-auto"
                   >
-                    <span className="relative z-[1]">Book a Free Consultation</span>
+                    <span className="relative z-[1]">Start a project</span>
                   </Link>
                 </div>
               </Reveal>

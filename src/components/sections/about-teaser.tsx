@@ -23,7 +23,7 @@ export function AboutTeaserSection() {
             href="/about"
             className="btn-shine relative mt-8 inline-flex h-12 items-center justify-center overflow-hidden rounded-lg border-2 border-blue-700 bg-white px-8 text-sm font-semibold text-blue-800 shadow-sm transition hover:bg-blue-50"
           >
-            <span className="relative z-[1]">Meet the team &amp; story</span>
+            <span className="relative z-[1]">About us</span>
           </Link>
         </Reveal>
       </div>

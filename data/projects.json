@@ -1,0 +1,333 @@
+[
+  {
+    "slug": "automated-google-sheets-to-calendar-scheduling-system",
+    "title": "Automated Google Sheets to Calendar Scheduling System",
+    "description": "This project builds an automated scheduling system that syncs Google Sheets data with Google Calendar and generates a clean, print-friendly weekly schedule.\r\n\r\nA custom web app displays the live calendar in a formatted layout designed for wall posting, ensuring updates appear in real time.\r\n\r\nQR codes on printed schedules link staff to the live page, allowing quick access and easy reprinting whenever changes occur, while maintaining accessibility for individuals without mobile devices.",
+    "skills": [
+      "Google Apps Script",
+      "Google Calendar",
+      "QR Code Design",
+      "HTML",
+      "CSS"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/automated-google-sheets-to-calendar-scheduling-system-1793753106423-0.png",
+        "alt": "google sheets to calendar scheduling system"
+      },
+      {
+        "src": "/images/uploads/projects/automated-google-sheets-to-calendar-scheduling-system-1793753106424-1.png",
+        "alt": "Screenshot_1"
+      },
+      {
+        "src": "/images/uploads/projects/automated-google-sheets-to-calendar-scheduling-system-1793753106424-2.png",
+        "alt": "Screenshot_2"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": false,
+    "homeOrder": 1,
+    "updatedAt": "2026-11-04T01:08:28.713Z",
+    "categories": [
+      "ops"
+    ]
+  },
+  {
+    "slug": "monthly-checkin-workflow-n8n",
+    "title": "Monthly Checkin Workflow | n8n",
+    "description": "AI-powered Microsoft Teams check-in system built with n8n and Microsoft Graph.\r\nThe automation detects project phase directly from Team names, monitors activity by analyzing recent channel messages, and sends monthly, phase-appropriate client check-ins only when needed.\r\nIt prevents duplicate outreach, requires no manual tracking or databases, and runs fully on a schedule - delivering consistent, accurate client communication at scale with zero ongoing management.",
+    "skills": [
+      "n8n",
+      "Microsoft Azure Administration",
+      "Microsoft Teams"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/monthly-checkin-workflow-n8n-1793752756171-0.png",
+        "alt": "monthly checking"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": false,
+    "homeOrder": 2,
+    "updatedAt": "2026-11-04T01:08:38.348Z",
+    "categories": [
+      "workflow"
+    ]
+  },
+  {
+    "slug": "automated-response-to-unanswered-questions-n8n",
+    "title": "Automated Response to Unanswered Questions | N8N",
+    "description": "Daily 4 PM Microsoft Teams follow-up automation that detects and responds to unanswered messages automatically.\r\nThe workflow scans all relevant Teams and primary channels, reviews messages from the past week, and identifies items without replies.\r\nEach message is analyzed by an AI agent, which generates a context-aware response using predefined templates and posts the reply in the correct channel—ensuring no client or support message is missed while keeping communication consistent and timely.",
+    "skills": [
+      "n8n",
+      "Microsoft Azure Administration",
+      "Microsoft Teams"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/automated-response-to-unanswered-questions-n8n-1793752691479-0.png",
+        "alt": "Automated Respose n8n"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": false,
+    "homeOrder": 3,
+    "updatedAt": "2026-11-04T01:08:42.785Z",
+    "categories": [
+      "workflow"
+    ]
+  },
+  {
+    "slug": "teams-meeting-note-taker-n8n",
+    "title": "Teams Meeting Note Taker | N8N",
+    "description": "Automated Microsoft Teams meeting notes workflow that manages meetings end-to-end with no manual effort.\r\nIt monitors Outlook for new meetings, auto-accepts invites, joins Teams meetings at the scheduled time, retrieves transcripts after the meeting, and uses AI to generate structured summaries, decisions, and action items.\r\nFinal notes are automatically shared with all attendees, with built-in validation, error handling, and logging to prevent duplicates and failures.",
+    "categories": [
+      "workflow"
+    ],
+    "skills": [
+      "n8n",
+      "Microsoft Teams",
+      "Microsoft Azure Administration",
+      "Microsoft Outlook"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/teams-meeting-note-taker-n8n-1793752614875-0.png",
+        "alt": "1"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": true,
+    "homeOrder": 3,
+    "updatedAt": "2026-11-04T01:09:48.444Z"
+  },
+  {
+    "slug": "mobile-auto-repair-crm-automation-voice-chatbot-agent",
+    "title": "Mobile Auto Repair CRM & Automation | Voice & Chatbot Agent",
+    "description": "Built an integrated operations and customer communication system for a Dubai-based mobile auto repair business using Fieldd, Google Workspace, Google Calendar, Zapier, QuickBooks, Stripe, WhatsApp automation, and a Vapi voice agent. The solution covered technician scheduling, booking workflows, lead capture, AI chatbot and voice assistant integration, customer event notifications, and internal support processes to streamline field service operations and improve response speed.",
+    "skills": [
+      "CRM Development",
+      "Next.js",
+      "n8n",
+      "Zapier",
+      "Vapi",
+      "WhatsApp"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/mobile-auto-repair-crm-automation-voice-chatbot-agent-1793752527625-0.png",
+        "alt": "1"
+      },
+      {
+        "src": "/images/uploads/projects/mobile-auto-repair-crm-automation-voice-chatbot-agent-1793752527626-1.png",
+        "alt": "2"
+      },
+      {
+        "src": "/images/uploads/projects/mobile-auto-repair-crm-automation-voice-chatbot-agent-1793752527627-2.png",
+        "alt": "3"
+      },
+      {
+        "src": "/images/uploads/projects/mobile-auto-repair-crm-automation-voice-chatbot-agent-1793752527628-3.png",
+        "alt": "4"
+      },
+      {
+        "src": "/images/uploads/projects/mobile-auto-repair-crm-automation-voice-chatbot-agent-1793752527629-4.png",
+        "alt": "5"
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-04T00:35:27.630Z",
+    "featuredOnHome": false,
+    "homeOrder": 100,
+    "categories": [
+      "crm",
+      "workflow",
+      "ai"
+    ]
+  },
+  {
+    "slug": "custom-monday-com-project-management-automation-system",
+    "title": "Custom Monday.com Project Management & Automation System",
+    "description": "Designed and implemented a custom project management system in Monday.com for a construction company, including board architecture, task dependencies, status tracking, and dashboards.\r\n\r\nDeveloped advanced automations using n8n and the Monday.com GraphQL API to preserve task durations when tasks are completed ahead of schedule and automatically synchronize subitem statuses.\r\n\r\nIntegrated webhook-driven workflows to reduce manual work, streamline project scheduling, and improve team coordination and project visibility.",
+    "skills": [
+      "Project Management",
+      "Automation",
+      "Monday.com",
+      "n8n"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/custom-monday-com-project-management-automation-system-1793752358110-0.png",
+        "alt": "1"
+      },
+      {
+        "src": "/images/uploads/projects/custom-monday-com-project-management-automation-system-1793752358111-1.png",
+        "alt": "2"
+      },
+      {
+        "src": "/images/uploads/projects/custom-monday-com-project-management-automation-system-1793752358112-2.png",
+        "alt": "3"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": true,
+    "homeOrder": 2,
+    "updatedAt": "2026-11-04T01:09:35.327Z",
+    "categories": [
+      "ops",
+      "workflow"
+    ]
+  },
+  {
+    "slug": "google-sheets-production-management-system-with-apps-script-automation",
+    "title": "Google Sheets Production Management System with Apps Script Automation",
+    "description": "Built a custom production management system in Google Sheets using Google Apps Script. The solution tracks vehicle builds, sales status, production stages, priorities, start and delivery dates, van specifications, layouts, and component completion. Apps Script automations reduce manual work, update production data, and support smoother workflow management. Color-coded dropdowns and status fields help the team quickly monitor progress, identify delays, and manage each build from pre-production to completion.",
+    "skills": [
+      "Google Sheets Automation",
+      "Google Apps Script"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/google-sheets-production-management-system-with-apps-script-automation-1793752071354-0.png",
+        "alt": "image_original"
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-04T00:27:51.355Z",
+    "featuredOnHome": false,
+    "homeOrder": 100,
+    "categories": [
+      "ops"
+    ]
+  },
+  {
+    "slug": "isp-retention-crm",
+    "title": "ISP Retention CRM",
+    "description": "Post-sale CRM for ISP retention teams that keep installs on track and stop cancellations. Agents manage a multi-ISP customer pipeline-import CSV/XLSX with column mapping and duplicate detection, log calls/texts, escalate issues by email, and track open/assigned/closed work by role (admin, manager, VA). Built with Next.js, TypeScript, Supabase, and Material UI, with optional RingCentral click-to-dial, tasks, recovery follow-ups, and reporting.",
+    "skills": [
+      "CRM Development",
+      "Web Development",
+      "Next.js",
+      "Material UI",
+      "Supabase"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/isp-retention-crm-1793751954636-0.png",
+        "alt": "1"
+      },
+      {
+        "src": "/images/uploads/projects/isp-retention-crm-1793751954637-1.png",
+        "alt": "2"
+      },
+      {
+        "src": "/images/uploads/projects/isp-retention-crm-1793751954639-3.png",
+        "alt": "4"
+      },
+      {
+        "src": "/images/uploads/projects/isp-retention-crm-1793751954640-4.png",
+        "alt": "5"
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-04T00:46:22.770Z",
+    "featuredOnHome": false,
+    "homeOrder": 100,
+    "categories": [
+      "crm"
+    ]
+  },
+  {
+    "slug": "patient-journey-automation-hubspot-n8n-integration",
+    "title": "Patient Journey Automation - HubSpot & n8n Integration",
+    "description": "Built an end-to-end patient journey automation connecting HubSpot, n8n, Carrd, WordPress, Calendly, and SimpleTexting. Automated patient intake, clinic submissions, platform registration, onboarding scheduling, appointment reminders, onboarding completion, no-show/rescheduling, registration reminders, and long-term follow-up. Centralized patient journey tracking in HubSpot with automated status updates, appointment tracking, patient source, registration milestones, and follow-up stages, reducing manual work and keeping the team informed throughout the patient lifecycle.",
+    "skills": [
+      "HubSpot",
+      "n8n",
+      "WordPress",
+      "CRM Automation"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782051-0.png",
+        "alt": "Screenshot 2026-10-19 180843"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782052-1.png",
+        "alt": "Screenshot 2026-07-02 135354"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782054-2.png",
+        "alt": "Screenshot_1"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782056-3.png",
+        "alt": "Screenshot_2"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782056-4.png",
+        "alt": "Screenshot_3"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782057-5.png",
+        "alt": "Screenshot_4"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782058-6.png",
+        "alt": "Screenshot_5"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782058-7.png",
+        "alt": "Screenshot_6"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782058-8.png",
+        "alt": "Screenshot_7"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782059-9.png",
+        "alt": "Screenshot_8"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782060-10.png",
+        "alt": "Screenshot_9"
+      },
+      {
+        "src": "/images/uploads/projects/patient-journey-automation-hubspot-n8n-integration-1793751782060-11.png",
+        "alt": "Screenshot_10"
+      }
+    ],
+    "published": true,
+    "updatedAt": "2026-11-04T00:23:02.061Z",
+    "featuredOnHome": false,
+    "homeOrder": 100,
+    "categories": [
+      "crm",
+      "workflow"
+    ]
+  },
+  {
+    "slug": "seamless-persona-registration-zoho-lead-integration-on-wordpress",
+    "title": "Seamless Persona Registration & Zoho Lead Integration on WordPress",
+    "description": "Implemented a seamless lead capture system on a WordPress website by embedding a custom Persona registration form.\r\nWhen customers register, their data is automatically structured in Zoho CRM to create new leads, ensuring smooth tracking and management of incoming users.",
+    "skills": [
+      "Zoho CRM",
+      "WordPress",
+      "User Identity Management"
+    ],
+    "photos": [
+      {
+        "src": "/images/uploads/projects/seamless-persona-registration-zoho-lead-integration-on-wordpress-1793750908966-0.png",
+        "alt": "Seamless Personal & Zoho"
+      }
+    ],
+    "published": true,
+    "featuredOnHome": true,
+    "homeOrder": 1,
+    "updatedAt": "2026-11-04T01:09:19.078Z",
+    "categories": [
+      "crm"
+    ]
+  }
+]

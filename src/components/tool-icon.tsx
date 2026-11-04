@@ -9,12 +9,12 @@ type ToolIconProps = {
 };
 
 function getInitials(name: string) {
-  return name
-    .split(/\s+/)
-    .map((word) => word[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
+  const words = name.split(/[\s.]+/).filter(Boolean);
+  const letters =
+    words.length === 1
+      ? words[0].slice(0, 2)
+      : words.map((word) => word[0]).join("");
+  return letters.slice(0, 2).toUpperCase();
 }
 
 export function ToolIcon({ name, src }: ToolIconProps) {

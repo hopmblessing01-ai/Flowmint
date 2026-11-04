@@ -8,9 +8,10 @@ import { useEffect, useState } from "react";
 const nav = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case studies" },
+  { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
-  { href: "/#contact", label: "Contact us" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -44,8 +45,8 @@ export function SiteHeader() {
             onClick={() => setOpen(false)}
           >
             <Image
-              src="/images/logo4.png"
-              alt="AutoEngage logo"
+              src="/images/logo-img.png"
+              alt="Flowmint logo"
               width={170}
               height={42}
               className="h-9 w-auto sm:h-10"
@@ -55,13 +56,13 @@ export function SiteHeader() {
 
           <nav className="hidden items-center gap-0.5 lg:flex">
             {nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="rounded-lg px-2.5 py-2 text-sm font-medium text-slate-600 transition hover:bg-blue-50 hover:text-blue-800 lg:px-3"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -76,10 +77,10 @@ export function SiteHeader() {
               <span className="tabular-nums">+44 7543 196 059</span>
             </a>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn-shine relative hidden overflow-hidden rounded-lg bg-blue-700 px-4 py-2 text-xs font-semibold text-white shadow-md transition hover:bg-blue-800 sm:inline-flex sm:px-5 sm:text-sm"
             >
-              <span className="relative z-[1]">Get a quote</span>
+              <span className="relative z-[1]">Start a project</span>
             </Link>
             <button
               type="button"
@@ -97,21 +98,21 @@ export function SiteHeader() {
           <div className="border-t border-slate-100 px-4 py-4 lg:hidden">
             <nav className="mx-auto flex max-w-6xl flex-col gap-0.5 sm:px-6 lg:px-8">
               {nav.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-800"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <Link
-                href="/#contact"
+                href="/contact"
                 className="btn-shine relative mt-3 inline-flex h-11 items-center justify-center overflow-hidden rounded-lg bg-blue-700 text-sm font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                <span className="relative z-[1]">Get a quote</span>
+                <span className="relative z-[1]">Start a project</span>
               </Link>
             </nav>
           </div>

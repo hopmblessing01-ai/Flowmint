@@ -13,11 +13,11 @@ export function ServicesTeaserSection() {
             Services
           </p>
           <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            Implementation and consulting - on dedicated pages
+            CRM, ops systems, workflows, and AI - built to hand over
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
-            Browse every offering with imagery, detail pages for delivery work,
-            and a clear path to book consulting or a build.
+            See how we set up CRMs and project tools, automate workflows, and
+            ship AI assistants your team can run after we leave.
           </p>
           <Link
             href="/services"

@@ -45,7 +45,7 @@ function buildEmailBody(data: {
     : "";
 
   const text = [
-    "New message from the AutoEngage website contact form.",
+    `New message from the ${siteName} website contact form.`,
     "",
     `Name: ${data.name}`,
     `Email: ${data.email}`,

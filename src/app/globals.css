@@ -39,6 +39,49 @@
   }
 }
 
+@keyframes modal-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes modal-image-in {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal-backdrop {
+  animation: modal-backdrop-in 220ms ease-out both;
+}
+
+.animate-modal-panel {
+  animation: modal-panel-in 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-modal-image {
+  animation: modal-image-in 280ms ease-out both;
+}
+
 @keyframes float-soft {
   0%,
   100% {
@@ -113,6 +156,42 @@
   to {
     transform: translateX(130%) skewX(-14deg);
   }
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.animate-loader-spin {
+  animation: loader-spin 1s linear infinite;
+}
+
+.animate-loader-spin-reverse {
+  animation: loader-spin-reverse 1.45s linear infinite;
+}
+
+.animate-loader-glow {
+  animation: loader-glow 2.2s ease-in-out infinite;
 }
 
 .animate-fade-up {
@@ -222,7 +301,10 @@
   .animate-float-soft,
   .animate-glow-pulse,
   .animate-hero-glow,
-  .animate-hero-line {
+  .animate-hero-line,
+  .animate-loader-spin,
+  .animate-loader-spin-reverse,
+  .animate-loader-glow {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
@@ -234,6 +316,14 @@
 
   .card-glass-hover::before {
     display: none !important;
+  }
+
+  .animate-modal-backdrop,
+  .animate-modal-panel,
+  .animate-modal-image {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 

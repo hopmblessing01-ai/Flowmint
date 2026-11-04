@@ -11,7 +11,7 @@ import { servicesPageHero } from "@/lib/page-hero-assets";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CRM, workflow automation, AI assistants, and automation consulting - from discovery through delivery.",
+    "CRM setup, project and ops systems, workflow automation, and AI assistants across HubSpot, Salesforce, Zoho CRM, Pipedrive, GoHighLevel, Monday.com, Airtable, ClickUp, Asana, and Notion.",
   alternates: {
     canonical: "/services",
   },
@@ -39,23 +39,30 @@ export default function ServicesIndexPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/88 [text-shadow:0_1px_16px_rgba(0,0,0,0.35)]">
               Every engagement uses the same documentation habits and ownership
-              model - whether you need consulting, implementation, or both.
+              model - so your team can run the system after we leave.
             </p>
           </Reveal>
         </PageHero>
 
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
           <div className="grid gap-8 sm:grid-cols-2 lg:gap-10">
-            {items.map((item, i) => {
-              const isHash = item.href.startsWith("/#");
-              const inner = (
-                <>
+            {items.map((item, i) => (
+              <Reveal
+                key={item.title}
+                variant={i % 2 === 0 ? "slide-left" : "slide-right"}
+                delayMs={i * 75}
+                durationMs={1000}
+              >
+                <Link
+                  href={item.href}
+                  className="card-glass-hover group flex h-full flex-col overflow-hidden rounded-2xl border border-white/50 bg-white/45 text-left no-underline shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] backdrop-blur-md outline-offset-4 transition duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-900/15 supports-[backdrop-filter]:bg-white/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600"
+                >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.imageAlt}
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      sizes="(max-width: 640px) 100vw, 50vw"
                       className="object-cover transition duration-500 group-hover:scale-[1.04]"
                     />
                     <div
@@ -71,37 +78,15 @@ export default function ServicesIndexPage() {
                       {item.summary}
                     </p>
                     <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 transition duration-300 group-hover:gap-3 group-hover:text-sky-100">
-                      {isHash ? "Book a call" : "View detail"}
+                      View details
                       <span aria-hidden className="transition group-hover:translate-x-0.5">
                         →
                       </span>
                     </span>
                   </div>
-                </>
-              );
-
-              const cardClass =
-                "card-glass-hover group flex h-full flex-col overflow-hidden rounded-2xl border border-white/50 bg-white/45 text-left no-underline shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] backdrop-blur-md outline-offset-4 transition duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-900/15 supports-[backdrop-filter]:bg-white/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600";
-
-              return (
-                <Reveal
-                  key={item.title}
-                  variant={i % 2 === 0 ? "slide-left" : "slide-right"}
-                  delayMs={i * 75}
-                  durationMs={1000}
-                >
-                  {isHash ? (
-                    <a href={item.href} className={cardClass}>
-                      {inner}
-                    </a>
-                  ) : (
-                    <Link href={item.href} className={cardClass}>
-                      {inner}
-                    </Link>
-                  )}
-                </Reveal>
-              );
-            })}
+                </Link>
+              </Reveal>
+            ))}
           </div>
         </div>
       </main>

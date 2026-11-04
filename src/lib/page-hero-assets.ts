@@ -10,9 +10,14 @@ export const aboutPageHero = {
   alt: "Colleagues working together at a shared desk",
 };
 
-export const caseStudiesPageHero = {
+export const projectsPageHero = {
   src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=85",
   alt: "Business planning session with reports and laptops",
+};
+
+export const contactPageHero = {
+  src: "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=2000&q=85",
+  alt: "Person writing an email on a laptop",
 };
 
 export const notFoundPageHero = {

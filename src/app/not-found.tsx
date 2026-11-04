@@ -21,11 +21,11 @@ export default function NotFound() {
                 404
               </p>
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.35)] sm:text-4xl">
-                This page could not be found
+                We can’t find that page
               </h1>
               <p className="mt-4 text-base leading-relaxed text-white/85 [text-shadow:0_1px_12px_rgba(0,0,0,0.35)]">
-                The link may be outdated, or the page was moved. Head back to the
-                homepage or jump to services.
+                The link may be outdated, or the page was moved. Head back home
+                or jump to services.
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link

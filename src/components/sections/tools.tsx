@@ -15,8 +15,8 @@ export function ToolsSection() {
             Tools & platforms we implement daily
           </h2>
           <p className="mt-4 max-w-2xl text-base text-slate-600">
-            We meet you where you operate, then connect CRM, automation, project
-            management, communication, and finance into one reliable system.
+            We meet you where you operate - CRM, project tools, automation
+            platforms, and AI - then connect them into one reliable system.
           </p>
         </Reveal>
 

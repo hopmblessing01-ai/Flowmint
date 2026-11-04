@@ -1,6 +1,6 @@
 # Contact form → hopmblessing@gmail.com
 
-The form uses **Web3Forms** to email you directly. No `@autoengage.uk.com` mailbox or Resend domain setup required.
+The form uses **Web3Forms** to email you directly. No custom-domain mailbox or Resend domain setup required.
 
 ## Setup (5 minutes)
 
@@ -15,7 +15,7 @@ The form uses **Web3Forms** to email you directly. No `@autoengage.uk.com` mailb
 
 5. **Deploy** the site again (required — `NEXT_PUBLIC_*` vars are baked in at build time)
 
-6. Submit a test on `https://autoengage.uk.com/#contact` and check **hopmblessing@gmail.com** (and spam)
+6. Submit a test on `https://flowmintops.netlify.app/contact` and check **hopmblessing@gmail.com** (and spam)
 
 ## Local development
 

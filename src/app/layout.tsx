@@ -1,10 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { NavigationLoader } from "@/components/navigation-loader";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import {
   brandKeywords,
   contactEmail,
+  crmPlatforms,
   defaultDescription,
+  serviceTypes,
+  workPlatforms,
   siteName,
   siteTagline,
   siteUrl,
@@ -103,12 +107,15 @@ const jsonLd = [
     email: contactEmail,
     description: defaultDescription,
     areaServed: "Worldwide",
-    serviceType: [
-      "CRM consulting",
-      "Workflow automation",
-      "AI chatbot implementation",
-      "Voice agent automation",
-      "Business process automation",
+    serviceType: serviceTypes,
+    knowsAbout: [
+      ...crmPlatforms,
+      ...workPlatforms,
+      "n8n",
+      "Zapier",
+      "Make",
+      "AI chatbots",
+      "voice agents",
     ],
   },
 ];
@@ -131,7 +138,10 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <NavigationLoader />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

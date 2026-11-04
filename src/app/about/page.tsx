@@ -1,13 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { aboutIntro, aboutValues } from "@/lib/about-content";
+import { aboutIntro, aboutStory, aboutValues } from "@/lib/about-content";
 import { aboutPageHero } from "@/lib/page-hero-assets";
-import { teamMembers } from "@/lib/team";
 import {
   serviceCardBodyClass,
   serviceCardClass,
@@ -17,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "AutoEngage builds maintainable automation and CRM systems for growing teams - and the people behind the work.",
+    "Flowmint builds maintainable automation and CRM systems for growing teams.",
   alternates: {
     canonical: "/about",
   },
@@ -69,49 +67,16 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <Reveal variant="fade-up" className="mt-20" durationMs={1000}>
+          <Reveal variant="fade-up" className="mt-20 max-w-3xl" durationMs={1000}>
             <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
-              Team
+              How we work
             </h2>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              A small senior team - you work directly with the people shipping your
-              systems, not a rotating bench.
-            </p>
+            <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-600 sm:text-lg sm:leading-8">
+              {aboutStory.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
           </Reveal>
-
-          <div className="mx-auto mt-12 grid max-w-4xl gap-8 sm:grid-cols-2">
-            {teamMembers.map((member, i) => (
-              <Reveal
-                key={member.name}
-                variant={i % 2 === 0 ? "slide-left" : "slide-right"}
-                delayMs={i * 80}
-                durationMs={1000}
-              >
-                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-[0_12px_40px_-16px_rgba(15,23,42,0.14)] transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
-                  <div className="relative h-[360px] overflow-hidden bg-slate-100 sm:h-[420px]">
-                    <Image
-                      src={member.image}
-                      alt={member.imageAlt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col border-t border-slate-100 bg-gradient-to-b from-blue-50/40 to-white px-5 py-5 sm:px-6 sm:py-6">
-                    <h3 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-[1.35rem]">
-                      {member.name}
-                    </h3>
-                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-blue-700">
-                      {member.role}
-                    </p>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-[0.9375rem] sm:leading-7">
-                      {member.bio}
-                    </p>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
-          </div>
 
           <Reveal variant="fade-scale" className="mt-16" delayMs={80} durationMs={1000}>
             <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white px-6 py-8 sm:px-10 sm:py-10">
@@ -119,14 +84,14 @@ export default function AboutPage() {
                 Want the same clarity on your stack?
               </p>
               <p className="mt-2 max-w-xl text-sm text-slate-600">
-                Start with a free consultation - we’ll map constraints, quick wins,
+                Tell us what’s slow or broken - we’ll map constraints, quick wins,
                 and a sensible first milestone.
               </p>
               <Link
-                href="/#contact"
+                href="/contact"
                 className="mt-5 inline-flex h-11 items-center justify-center rounded-lg bg-blue-700 px-6 text-sm font-semibold text-white shadow-md transition hover:bg-blue-800"
               >
-                Book a Free Consultation
+                Start a project
               </Link>
             </div>
           </Reveal>

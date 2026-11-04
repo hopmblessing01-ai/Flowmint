@@ -20,12 +20,12 @@ const benefits = [
   },
   {
     title: "Faster lead follow-up",
-    body: "Consistent routing and timely responses help you convert more conversations into revenue—even when inquiry volume increases.",
+    body: "Consistent routing and timely responses help you convert more conversations into revenue - even when inquiry volume increases.",
     icon: TrendingUp,
   },
   {
     title: "24/7 chat & voice coverage",
-    body: "AI chatbots and voice agents qualify inquiries, answer common questions, and route hot leads instantly—day or night.",
+    body: "AI chatbots and voice agents qualify inquiries, answer common questions, and route hot leads instantly - day or night.",
     icon: Bot,
   },
 ];
@@ -43,7 +43,7 @@ export function ProblemSection() {
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             We help founders and operators connect tools, automate repetitive work,
-            and respond faster—so growth feels steady, not fragile.
+            and respond faster - so growth feels steady, not fragile.
           </p>
         </Reveal>
 

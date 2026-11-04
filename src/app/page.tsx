@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { AboutTeaserSection } from "@/components/sections/about-teaser";
-import { CaseStudiesSection } from "@/components/sections/case-studies";
-import { FinalCtaSection } from "@/components/sections/final-cta";
+import { ProjectsSection } from "@/components/sections/projects";
 import { Hero } from "@/components/sections/hero";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
 import { ProblemSection } from "@/components/sections/problem";
@@ -33,6 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <>
@@ -42,10 +43,9 @@ export default function Home() {
         <ProblemSection />
         <ServicesTeaserSection />
         <HowItWorksSection />
-        <CaseStudiesSection />
+        <ProjectsSection />
         <ToolsSection />
         <AboutTeaserSection />
-        <FinalCtaSection />
       </main>
       <SiteFooter />
     </>

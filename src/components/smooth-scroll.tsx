@@ -27,7 +27,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       wheelMultiplier: 1,
       touchMultiplier: 1,
       syncTouch: false,
-      /** Smooth in-page anchors (e.g. /#contact) */
+      /** Smooth in-page anchors (e.g. /#process) */
       anchors: true,
       stopInertiaOnNavigate: true,
     });

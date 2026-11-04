@@ -121,7 +121,7 @@ export function HeroCarousel() {
             className="object-cover object-[right_top]"
           />
           <div
-            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-700/50 to-blue-500/10"
+            className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#071428e8_0%,#0c1e3db3_28%,#0c1e3d00_62%)]"
             aria-hidden
           />
         </div>
@@ -148,10 +148,10 @@ export function HeroCarousel() {
 
           <div className="animate-hero-line hero-stagger-5 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn-shine inline-flex h-12 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 px-8 text-sm font-semibold text-white shadow-lg shadow-blue-950/30 transition hover:-translate-y-0.5 active:translate-y-0"
             >
-              Book a Free Consultation
+              Start a project
             </Link>
           </div>
         </div>

@@ -5,15 +5,16 @@ import { Reveal } from "@/components/reveal";
 const exploreLinks = [
   { href: "/#problem", label: "What you gain" },
   { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case studies" },
+  { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
   { href: "/#process", label: "How it works" },
-  { href: "/#results", label: "Results" },
   { href: "/about", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const serviceLinks = [
   { href: "/services/crm", label: "CRM setup & optimization" },
+  { href: "/services/ops", label: "Project & ops systems" },
   { href: "/services/workflow", label: "Workflow automation" },
   { href: "/services/ai", label: "AI & voice automation" },
 ];
@@ -48,7 +49,7 @@ export function SiteFooter() {
               durationMs={1000}
             >
               <p className="text-xl font-bold tracking-tight text-white">
-                AutoEngage<span className="text-sky-400">.</span>
+                Flowmint<span className="text-sky-400">.</span>
               </p>
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-300">
                 We design and ship automation, CRM, and integrations your team can
@@ -60,11 +61,11 @@ export function SiteFooter() {
                   Ready when you are
                 </p>
                 <p className="mt-2 text-sm text-slate-300">
-                  Tell us what is slow, manual, or breaking - and we will reply with
+                  Tell us what is slow, manual, or breaking - and we’ll reply with
                   next steps within one business day.
                 </p>
                 <Link
-                  href="/#contact"
+                  href="/contact"
                   className="mt-4 inline-flex h-10 items-center justify-center rounded-lg bg-sky-500 px-4 text-sm font-semibold text-[#0c1e3d] shadow-md transition hover:bg-sky-400"
                 >
                   Start a project
@@ -81,12 +82,12 @@ export function SiteFooter() {
                 <ul className="mt-4 flex flex-col gap-2.5 text-sm">
                   {exploreLinks.map((item) => (
                     <li key={item.href}>
-                      <a
+                      <Link
                         href={item.href}
                         className="font-medium text-slate-300 transition hover:text-white"
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -166,7 +167,7 @@ export function SiteFooter() {
                     <p className="mt-0.5 font-medium leading-snug text-white">
                       Mon–Fri · 9:00–18:00
                       <span className="mt-1 block text-slate-400">
-                        Remote-first · US & EU-friendly time zones
+                        Remote-first · UK-based · US & EU-friendly hours
                       </span>
                     </p>
                   </div>
@@ -178,7 +179,7 @@ export function SiteFooter() {
           <Reveal variant="fade-up" delayMs={120} durationMs={900}>
           <div className="flex flex-col items-start justify-between gap-6 pt-8 sm:flex-row sm:items-center">
             <p className="max-w-xl text-xs leading-relaxed text-slate-400">
-              AutoEngage is a systems partner for growing teams: we align on outcomes,
+              Flowmint is a systems partner for growing teams: we align on outcomes,
               map your stack, then automate with clear ownership - not a black box.
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-400">
@@ -194,8 +195,11 @@ export function SiteFooter() {
               >
                 Terms
               </a>
-              <Link href="/#contact" className="transition hover:text-sky-300">
+              <Link href="/contact" className="transition hover:text-sky-300">
                 Support
+              </Link>
+              <Link href="/admin/login" className="transition hover:text-sky-300">
+                Admin
               </Link>
             </div>
           </div>
@@ -216,10 +220,10 @@ export function SiteFooter() {
         <Reveal variant="fade-scale" durationMs={900}>
           <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-2 sm:flex-row sm:justify-between sm:text-left">
             <p className="text-xs font-medium tracking-wide text-slate-400">
-              © {new Date().getFullYear()} AutoEngage. All rights reserved.
+              © {new Date().getFullYear()} Flowmint. All rights reserved.
             </p>
             <p className="text-[11px] text-slate-500">
-              CRM · workflows · integrations · AI guardrails you control
+              CRM · ops systems · workflows · AI guardrails you control
             </p>
           </div>
         </Reveal>

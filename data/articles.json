@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "why-growing-teams-need-a-real-crm",
+    "title": "Why growing teams need a real CRM",
+    "description": "Spreadsheets hide ownership. A CRM makes follow-up and forecasting something the whole team can trust.",
+    "body": "When a team is small, a shared spreadsheet can feel enough. Names go in a column. Someone remembers who spoke last. Then volume rises, people join, and the sheet becomes a private memory that only one person understands.\r\n\r\nA real CRM - HubSpot, Salesforce, Zoho CRM, Pipedrive, or GoHighLevel - is not about buying software for its own sake. It is about one place where stages, owners, and next steps mean the same thing to sales and leadership. Without that, deals stall in silence, handoffs get lost in chat, and forecasts turn into optimistic guesses.\r\n\r\nTeams usually feel the need when the same lead gets two follow-ups, when nobody can say who owns a stuck opportunity, or when reporting takes a full afternoon of copy-paste. Those are not discipline problems. They are system problems.\r\n\r\nFlowmint sets up the CRM around how you already sell: clean stages, clear ownership, and reporting people believe. Once that foundation is solid, automation and AI have somewhere trustworthy to write.",
+    "cover": {
+      "src": "/images/uploads/articles/why-growing-teams-need-a-real-crm-1793750082535-0.png",
+      "alt": "Why growing teams need a real CRM"
+    },
+    "published": true,
+    "publishedAt": "2026-11-07",
+    "updatedAt": "2026-11-03T23:54:42.538Z"
+  },
+  {
+    "slug": "why-ops-teams-need-project-systems-not-more-boards",
+    "title": "Why ops teams need project systems, not more boards",
+    "description": "Delivery breaks when status lives in chat, sheets, and three conflicting tools. One source of truth fixes that.",
+    "body": "Busy teams often respond to chaos by opening another Monday.com board, Airtable base, ClickUp space, Asana project, or Notion page. It feels like progress. It usually creates another place to update by hand.\r\n\r\nOps and delivery need a project system: clear status rules, named owners, and one source of truth per kind of work. Without that, “almost done” means three different things, deadlines slip in silence, and leadership asks for updates that nobody can answer without a scavenger hunt.\r\n\r\nYou know you need it when status meetings exist only to reconcile tools, when clients ask questions the board cannot answer, or when new hires cannot find where work actually lives. Headcount will not fix that. Structure will.\r\n\r\nFlowmint designs boards and bases around how work already moves, then leaves templates and ownership rules your team can run. When the structure is clean, automation can sync updates instead of spreading duplicates.",
+    "cover": {
+      "src": "/images/uploads/articles/why-ops-teams-need-project-systems-not-more-boards-1793750094879-0.png",
+      "alt": "Why ops teams need project systems, not more boards"
+    },
+    "published": true,
+    "publishedAt": "2026-11-06",
+    "updatedAt": "2026-11-03T23:54:54.883Z"
+  },
+  {
+    "slug": "why-business-teams-need-workflow-automation",
+    "title": "Why business teams need workflow automation",
+    "description": "If people are the glue between your tools, growth makes every handoff slower, costlier, and easier to break.",
+    "body": "Most growing teams already pay for good software. The pain is the space between tools: copying a form into the CRM, chasing a status in Slack, updating a sheet so finance can close the month. People become the integration layer.\r\n\r\nWorkflow automation on n8n, Zapier, Make, or Power Automate exists to remove that glue. Not to replace judgment - to stop skilled operators from retyping the same facts in three places. When the handoff is manual, every new hire learns a fragile ritual, and every busy week drops a step.\r\n\r\nTeams need automation when follow-up depends on someone remembering, when errors show up as “I thought you updated that,” or when the only person who knows the process is about to go on holiday. Those are reliability problems dressed up as staffing problems.\r\n\r\nFlowmint builds production workflows with monitoring, retries, and docs - so the system still runs when a field moves or an API blips. The goal is time back for work that actually needs a human.",
+    "cover": {
+      "src": "/images/uploads/articles/why-business-teams-need-workflow-automation-1793750036587-0.png",
+      "alt": "Why business teams need workflow automation"
+    },
+    "published": true,
+    "publishedAt": "2026-11-05",
+    "updatedAt": "2026-11-03T23:53:56.589Z"
+  },
+  {
+    "slug": "why-teams-need-ai-assistants-that-do-real-work",
+    "title": "Why teams need AI assistants that do real work",
+    "description": "FAQ bots answer questions. Useful assistants qualify, book, and leave a clean record in your CRM.",
+    "body": "Customers and leads do not wait for office hours. Teams that rely only on inbox and phone miss the ones who arrive at night, on weekends, or in the middle of a busy morning. Hiring more people for every channel is expensive and still leaves gaps.\r\n\r\nAI chat and voice assistants help when they do real work: qualify intent, capture the details that matter, book a slot when possible, and write the outcome into the CRM or ticketing system. A bot that only pastes FAQ links still leaves sales and ops to reconstruct the conversation later.\r\n\r\nYou feel the need when hot leads sit unanswered, when after-hours messages pile up, or when every new inquiry creates the same typing job for a human. The point is not to remove people. The point is to stop people from starting every conversation from zero.\r\n\r\nFlowmint builds guardrailed assistants that escalate when confidence drops and leave a trail your team can trust. AI is useful when it shortens the path to a booked next step - not when it creates a second inbox nobody owns.",
+    "cover": {
+      "src": "/images/uploads/articles/why-teams-need-ai-assistants-that-do-real-work-1793749993790-0.png",
+      "alt": "Why teams need AI assistants that do real work"
+    },
+    "published": true,
+    "publishedAt": "2026-11-04",
+    "updatedAt": "2026-11-03T23:53:13.835Z"
+  },
+  {
+    "slug": "what-a-first-automation-should-include",
+    "title": "What a first automation should include",
+    "description": "The smallest reliable system is the one your team can still run after handover.",
+    "body": "A first automation should remove one painful loop, not the whole company. Teams that try to “automate everything” in month one usually end up with fragile zaps, unclear ownership, and a system nobody wants to touch after the builder leaves.\r\n\r\nStart by naming the loop out loud: the trigger, the data you trust, the action that should happen, and the person who owns the outcome. If you cannot write those four things on one page, the automation is not ready to build.\r\n\r\nThen design for failure. APIs time out. Forms change. Someone renames a CRM stage. A reliable first build includes retries, a clear path when the job fails, and a place the team can see what happened without digging through logs.\r\n\r\nWrite the handover while you build, not after. Document credentials, where the workflow lives, how to pause it, and what to change when a field moves. Flowmint builds that first slice on the tools you already use, then leaves monitoring and docs behind so the system still works next month.",
+    "cover": {
+      "src": "/images/uploads/articles/what-a-first-automation-should-include-1793750164686-0.png",
+      "alt": "What a first automation should include"
+    },
+    "published": true,
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03T23:56:04.688Z"
+  },
+  {
+    "slug": "why-crm-clean-up-comes-before-fancy-automation",
+    "title": "Why CRM clean-up comes before fancy automation",
+    "description": "Bad fields and duplicate leads break workflows faster than any missing Zap.",
+    "body": "Automation magnifies whatever is already in the CRM. If owners, stages, and source fields are messy, every workflow ships the mess faster. That is why “connect HubSpot to Slack” feels exciting in a demo and noisy in production.\r\n\r\nBefore you connect n8n, Zapier, or Make, define the minimum clean data set. Required fields for a new lead. One owner model. Stage names that mean the same thing to sales and ops. A rule for duplicates so the same person does not get three follow-ups from three tools.\r\n\r\nClean-up does not mean a six-month data project. It means fixing the fields the automation will read and write. HubSpot, Salesforce, Zoho CRM, Pipedrive, and GoHighLevel can all support sharp workflows once the team agrees on those basics.\r\n\r\nWhen the CRM is clean enough to trust, automation becomes useful: routing, reminders, enrichment, and reporting land on records people already believe. Skip this step and you will spend more time undoing automation than running the business.",
+    "cover": {
+      "src": "/images/uploads/articles/why-crm-clean-up-comes-before-fancy-automation-1793750196367-0.png",
+      "alt": "Why CRM clean-up comes before fancy automation"
+    },
+    "published": true,
+    "publishedAt": "2026-11-02",
+    "updatedAt": "2026-11-03T23:56:36.371Z"
+  },
+  {
+    "slug": "how-we-hand-over-automation-so-it-does-not-become-a-black-box",
+    "title": "How we hand over automation so it does not become a black box",
+    "description": "If only the builder can change it, the system will fail the first time a form field moves.",
+    "body": "Production automation needs ownership after go-live. If only the builder can change it, the system will fail the first time a form field moves, an API key expires, or a CRM stage gets renamed. That is how teams end up calling for every small tweak.\r\n\r\nA proper handover names the trigger, the happy path, the failure path, and the person who can pause the workflow. It also says where credentials live, which environments are live versus test, and which steps are safe to edit without breaking the rest.\r\n\r\nDocumentation should be written for the person who was not in the build calls. Short notes beat long decks. Screenshots of the critical steps help. So do simple alerts when a run fails silently for a day.\r\n\r\nFlowmint ships monitoring and docs with the build so the system stays understandable. The goal is not to lock you into us. The goal is a system your team can run, change, and trust after the project ends.",
+    "cover": {
+      "src": "/images/uploads/articles/how-we-hand-over-automation-so-it-does-not-become-a-black-box-1793750224531-0.png",
+      "alt": "How we hand over automation so it does not become a black box"
+    },
+    "published": true,
+    "publishedAt": "2026-10-28",
+    "updatedAt": "2026-11-03T23:57:04.534Z"
+  },
+  {
+    "slug": "zapier-make-n8n-picking-the-right-layer",
+    "title": "Zapier, Make, n8n: picking the right layer for the job",
+    "description": "The best tool is the one your team can maintain, not the one with the most logos.",
+    "body": "Zapier and Make are strong when speed and a wide connector library matter. They get a first workflow live quickly and cover a lot of SaaS tools without custom code. That makes them a good fit for many CRM, form, and notification flows.\r\n\r\nn8n is strong when you need more control, self-hosting, complex branching, or workflows that sit closer to your own infrastructure. It is often the better layer when volume rises, when security rules tighten, or when the logic stops fitting a simple linear zap.\r\n\r\nThe decision should follow volume, security, and who will edit the workflow later. Mixing tools is fine if each piece has a clear job. What fails is choosing a platform because it looks impressive, then leaving nobody who can maintain it.\r\n\r\nFlowmint ships on the stack that fits the work, then leaves you with production workflows that survive real edge cases: retries, logging, and handover notes included. The right layer is the one your team can still run six months later.",
+    "cover": {
+      "src": "/images/uploads/articles/zapier-make-n8n-picking-the-right-layer-1793750246206-0.png",
+      "alt": "Zapier, Make, n8n: picking the right layer for the job"
+    },
+    "published": true,
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-11-03T23:57:26.213Z"
+  }
+]
