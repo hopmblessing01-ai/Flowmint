@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
@@ -54,8 +54,8 @@ export default function ContactPage() {
                   Reach us directly
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-slate-600">
-                  Prefer email or a quick call? Use the details below, or send
-                  the form and we’ll get back within one business day.
+                  Email us directly, or send the form and we’ll get back within
+                  one business day.
                 </p>
 
                 <ul className="mt-8 space-y-5">
@@ -72,22 +72,6 @@ export default function ContactPage() {
                         className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
                       >
                         {contactEmail}
-                      </a>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100">
-                      <Phone className="h-4 w-4" strokeWidth={2} aria-hidden />
-                    </span>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Phone
-                      </p>
-                      <a
-                        href="tel:+447543196059"
-                        className="mt-0.5 block text-base font-semibold tabular-nums text-slate-900 transition hover:text-blue-700"
-                      >
-                        +44 7543 196 059
                       </a>
                     </div>
                   </li>

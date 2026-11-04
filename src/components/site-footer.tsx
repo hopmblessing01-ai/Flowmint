@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const exploreLinks = [
@@ -137,22 +137,6 @@ export function SiteFooter() {
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
                     >
                       hopmblessing@gmail.com
-                    </a>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 text-sky-300 ring-1 ring-white/10">
-                    <Phone className="h-4 w-4" strokeWidth={2} aria-hidden />
-                  </span>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                      Phone
-                    </p>
-                    <a
-                      href="tel:+447543196059"
-                      className="mt-0.5 block font-medium text-white transition hover:text-sky-300 tabular-nums"
-                    >
-                      +44 7543 196 059
                     </a>
                   </div>
                 </li>

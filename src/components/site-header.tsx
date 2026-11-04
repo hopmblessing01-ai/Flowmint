@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const nav = [
@@ -67,15 +67,6 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <a
-              href="tel:+447543196059"
-              className="hidden items-center gap-1.5 text-sm font-semibold text-slate-700 transition hover:text-blue-700 md:inline-flex"
-            >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-700">
-                <Phone className="h-3.5 w-3.5" strokeWidth={2.5} />
-              </span>
-              <span className="tabular-nums">+44 7543 196 059</span>
-            </a>
             <Link
               href="/contact"
               className="btn-shine relative hidden overflow-hidden rounded-lg bg-blue-700 px-4 py-2 text-xs font-semibold text-white shadow-md transition hover:bg-blue-800 sm:inline-flex sm:px-5 sm:text-sm"
