@@ -9,7 +9,7 @@ export type ContactPayload = {
 
 type SubmitResult = { ok: boolean; error?: string };
 
-/** Web3Forms — sends to your inbox (hopmblessing@gmail.com). Free at web3forms.com */
+/** Web3Forms — delivers to the inbox registered on the access key. That inbox must be blessing@flowmint.uk. */
 export async function submitViaWeb3Forms(
   payload: ContactPayload,
   accessKey: string,

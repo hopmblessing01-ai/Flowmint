@@ -331,6 +331,10 @@ html {
   scroll-behavior: smooth;
 }
 
+textarea {
+  overscroll-behavior: contain;
+}
+
 body {
   background: linear-gradient(
       180deg,

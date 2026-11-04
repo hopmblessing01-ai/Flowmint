@@ -4,6 +4,7 @@ import { NavigationLoader } from "@/components/navigation-loader";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import {
   brandKeywords,
+  bookingUrl,
   contactEmail,
   crmPlatforms,
   defaultDescription,
@@ -90,6 +91,12 @@ const jsonLd = [
     email: contactEmail,
     description: defaultDescription,
     sameAs: ["https://blessingigwegbe.com"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: contactEmail,
+      contactType: "customer support",
+      url: bookingUrl,
+    },
   },
   {
     "@context": "https://schema.org",

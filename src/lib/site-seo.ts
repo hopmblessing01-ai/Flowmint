@@ -4,7 +4,8 @@ export const siteName = "Flowmint";
 export const siteTagline = "CRM, Ops, Workflow & AI Automation";
 export const defaultDescription =
   "Flowmint designs CRM systems, project and ops tools, workflow automation, and AI agents across HubSpot, Salesforce, Zoho CRM, Pipedrive, GoHighLevel, Monday.com, Airtable, ClickUp, Asana, and Notion.";
-export const contactEmail = "hopmblessing@gmail.com";
+export const contactEmail = "blessing@flowmint.uk";
+export const bookingUrl = "https://calendar.app.google/pYTJ5ThPZKV6JHX17";
 
 /** CRMs shown in the tools section. Keep keywords and structured data in step with this list. */
 export const crmPlatforms = [

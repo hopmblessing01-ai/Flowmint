@@ -27,6 +27,13 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       wheelMultiplier: 1,
       touchMultiplier: 1,
       syncTouch: false,
+      /** Let overflow regions (modals, long panels) scroll on their own. */
+      allowNestedScroll: true,
+      /**
+       * Wheel and touch over a textarea must move the field, not the page.
+       * Lenis otherwise calls preventDefault before the control can scroll.
+       */
+      prevent: (node) => node instanceof HTMLTextAreaElement,
       /** Smooth in-page anchors (e.g. /#process) */
       anchors: true,
       stopInertiaOnNavigate: true,

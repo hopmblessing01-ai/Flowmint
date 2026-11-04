@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { bookingUrl } from "@/lib/site-seo";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -31,8 +32,16 @@ export function SiteHeader() {
           <span className="font-medium tracking-wide text-white/95">
             Reliable automation & systems for teams that outgrow spreadsheets
           </span>
-          <span className="text-blue-200/90 tabular-nums">
-            Mon–Fri · 9:00–18:00 · Response within one business day
+          <span className="flex flex-wrap items-center gap-x-3 gap-y-1 text-blue-200/90 tabular-nums">
+            <span>Mon–Fri · 9:00–18:00 · Response within one business day</span>
+            <a
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white underline-offset-2 hover:underline"
+            >
+              Book a meeting
+            </a>
           </span>
         </div>
       </div>

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
+import { Calendar, Mail } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { contactPageHero } from "@/lib/page-hero-assets";
-import { contactEmail } from "@/lib/site-seo";
+import { bookingUrl, contactEmail } from "@/lib/site-seo";
 
 export const metadata: Metadata = {
   title: "Contact us",
-  description:
-    "Tell Flowmint what is slow or manual. Email hopmblessing@gmail.com or send a message - we reply within one business day.",
+  description: `Tell Flowmint what is slow or manual. Email ${contactEmail} or book a meeting - we reply within one business day.`,
   alternates: {
     canonical: "/contact",
   },
@@ -54,8 +53,8 @@ export default function ContactPage() {
                   Reach us directly
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-slate-600">
-                  Email us directly, or send the form and we’ll get back within
-                  one business day.
+                  Book a meeting, email us, or send the form. We’ll get back
+                  within one business day.
                 </p>
 
                 <ul className="mt-8 space-y-5">
@@ -75,14 +74,40 @@ export default function ContactPage() {
                       </a>
                     </div>
                   </li>
+                  <li className="flex gap-3">
+                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100">
+                      <Calendar className="h-4 w-4" strokeWidth={2} aria-hidden />
+                    </span>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                        Meeting
+                      </p>
+                      <a
+                        href={bookingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
+                      >
+                        Book a time
+                      </a>
+                    </div>
+                  </li>
                 </ul>
 
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:flex-col">
                   <a
-                    href={`mailto:${contactEmail}?subject=Start%20a%20project`}
+                    href={bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-shine relative inline-flex h-12 min-w-[200px] items-center justify-center overflow-hidden rounded-lg bg-blue-700 px-8 text-sm font-semibold text-white shadow-md transition hover:bg-blue-800"
                   >
-                    <span className="relative z-[1]">Email us</span>
+                    <span className="relative z-[1]">Book a meeting</span>
+                  </a>
+                  <a
+                    href={`mailto:${contactEmail}?subject=Start%20a%20project`}
+                    className="inline-flex h-12 items-center text-sm font-semibold text-blue-800 underline-offset-4 transition hover:underline"
+                  >
+                    Email us
                   </a>
                   <a
                     href={`mailto:${contactEmail}?subject=System%20audit%20request`}

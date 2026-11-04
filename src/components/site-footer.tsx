@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Mail, MapPin } from "lucide-react";
+import { Calendar, Mail, MapPin } from "lucide-react";
+import { bookingUrl, contactEmail } from "@/lib/site-seo";
 import { Reveal } from "@/components/reveal";
 
 const exploreLinks = [
@@ -133,10 +134,28 @@ export function SiteFooter() {
                       Email
                     </p>
                     <a
-                      href="mailto:hopmblessing@gmail.com"
+                      href={`mailto:${contactEmail}`}
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
                     >
-                      hopmblessing@gmail.com
+                      {contactEmail}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 text-sky-300 ring-1 ring-white/10">
+                    <Calendar className="h-4 w-4" strokeWidth={2} aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      Meeting
+                    </p>
+                    <a
+                      href={bookingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
+                    >
+                      Book a time
                     </a>
                   </div>
                 </li>
@@ -168,13 +187,13 @@ export function SiteFooter() {
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-400">
               <a
-                href="mailto:hopmblessing@gmail.com?subject=Privacy%20policy%20request"
+                href={`mailto:${contactEmail}?subject=Privacy%20policy%20request`}
                 className="transition hover:text-sky-300"
               >
                 Privacy
               </a>
               <a
-                href="mailto:hopmblessing@gmail.com?subject=Terms%20of%20service%20request"
+                href={`mailto:${contactEmail}?subject=Terms%20of%20service%20request`}
                 className="transition hover:text-sky-300"
               >
                 Terms
