@@ -155,7 +155,7 @@ export function SiteFooter() {
                       rel="noopener noreferrer"
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
                     >
-                      Book a time
+                      Book a meeting
                     </a>
                   </div>
                 </li>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Calendar, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
@@ -71,24 +71,6 @@ export default function ContactPage() {
                         className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
                       >
                         {contactEmail}
-                      </a>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100">
-                      <Calendar className="h-4 w-4" strokeWidth={2} aria-hidden />
-                    </span>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Meeting
-                      </p>
-                      <a
-                        href={bookingUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
-                      >
-                        Book a time
                       </a>
                     </div>
                   </li>
