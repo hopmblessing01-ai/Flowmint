@@ -33,9 +33,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteName,
   icons: {
-    icon: "./favicon.ico",
-    shortcut: "./favicon.ico",
-    apple: "./favicon.ico",
+    icon: [
+      { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "48x48" },
+    ],
+    apple: { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
   },
   alternates: {
     canonical: "/",
