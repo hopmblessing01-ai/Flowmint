@@ -5,7 +5,7 @@ import { ProjectPhoto } from "@/components/project-photo";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getArticle, getArticles } from "@/lib/content-store";
-import { siteName } from "@/lib/site-seo";
+import { siteName, siteUrl } from "@/lib/site-seo";
 
 export const dynamic = "force-dynamic";
 
@@ -15,14 +15,39 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return { title: "Blog" };
+
+  const path = `/blog/${article.slug}`;
+  const title = `${article.title} | ${siteName}`;
+  const images = article.cover
+    ? [{ url: article.cover.src, alt: article.cover.alt }]
+    : undefined;
+
   return {
     title: article.title,
     description: article.description,
-    alternates: { canonical: `/blog/${article.slug}` },
+    robots: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+    alternates: { canonical: path },
     openGraph: {
-      title: `${article.title} | ${siteName}`,
+      title,
       description: article.description,
       type: "article",
+      url: `${siteUrl}${path}`,
+      siteName,
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: article.description,
+      images: images?.map((image) => image.url),
     },
   };
 }
