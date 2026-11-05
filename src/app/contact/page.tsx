@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { contactPageHero } from "@/lib/page-hero-assets";
-import { bookingUrl, contactEmail } from "@/lib/site-seo";
+import { bookingUrl, contactEmail, contactPhone, contactPhoneHref } from "@/lib/site-seo";
 
 export const metadata: Metadata = {
   title: "Contact us",
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   Reach us directly
                 </h2>
                 <p className="mt-3 text-base leading-relaxed text-slate-600">
-                  Book a meeting, email us, or send the form. We’ll get back
+                  Call, book a meeting, email us, or send the form. We’ll get back
                   within one business day.
                 </p>
 
@@ -71,6 +71,22 @@ export default function ContactPage() {
                         className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
                       >
                         {contactEmail}
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700 ring-1 ring-blue-100">
+                      <Phone className="h-4 w-4" strokeWidth={2} aria-hidden />
+                    </span>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                        Phone
+                      </p>
+                      <a
+                        href={contactPhoneHref}
+                        className="mt-0.5 block text-base font-semibold text-slate-900 transition hover:text-blue-700"
+                      >
+                        {contactPhone}
                       </a>
                     </div>
                   </li>

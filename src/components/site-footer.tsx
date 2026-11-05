@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Calendar, Mail, MapPin } from "lucide-react";
-import { bookingUrl, contactEmail } from "@/lib/site-seo";
+import { Calendar, Mail, MapPin, Phone } from "lucide-react";
+import { bookingUrl, contactEmail, contactPhone, contactPhoneHref } from "@/lib/site-seo";
 import { Reveal } from "@/components/reveal";
 
 const exploreLinks = [
@@ -138,6 +138,22 @@ export function SiteFooter() {
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
                     >
                       {contactEmail}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 text-sky-300 ring-1 ring-white/10">
+                    <Phone className="h-4 w-4" strokeWidth={2} aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      Phone
+                    </p>
+                    <a
+                      href={contactPhoneHref}
+                      className="mt-0.5 block font-medium text-white transition hover:text-sky-300"
+                    >
+                      {contactPhone}
                     </a>
                   </div>
                 </li>
